@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>勉強会を遠隔盛り上げ-ガヤ人形-</title>
+  <link href="./css/index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="/__/firebase/7.2.3/firebase-app.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+</head>
+<body>
+  <div class='flex-container'>
+    <div class="title">オンオフ勉強会</div>
+    <div class="display-animation-container">
+      <div class="charactor-container">
+        <img id="gif" src="./images/white.png" height="60px" width="210px" style="margin-top: 38px;">
+        <img src="./images/logo.png" width="270px" style="opacity: 0.1; margin-top: -3px">
+        <img src="./images/charactor2.png" width="150px" style="margin-top: -107px">
+      </div>
+    </div>
+    <div class="reactions-container reactions-container-bg">
+      <ul class="reactions-ul">
+        <li class="reaction-element" onclick="playReaction1()">
+          歓声
+          <span class="material-icons reaction-icon" style="font-size: 30px;">
+            audiotrack
+          </span>
+        </li>
+        <li class="reaction-element" onclick="playReaction2()">
+          www
+          <span class="material-icons reaction-icon" style="font-size: 30px;">
+            sentiment_satisfied_alt
+          </span>
+        </li>
+        <li class="reaction-element" onclick="playReaction3()">
+          拍手
+          <span class="material-icons reaction-icon" style="font-size: 30px;">
+            thumb_up
+          </span>
+        </li>
+        <li class="reaction-element" onclick="playReaction4()">
+          質問！
+          <span class="material-icons reaction-icon" style="font-size: 30px;">
+            pan_tool
+          </span>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="comment-container">
+      <input id="comment" value="" placeholder="コメントを入力" class="comment-form" />
+    </div> -->
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+  <script type="text/javascript" src="./js/firebaseApp.js"></script>
+  <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>

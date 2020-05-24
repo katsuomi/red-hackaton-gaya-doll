@@ -1,0 +1,75 @@
+body {
+  font: Bold 16px/52px Noto Sans CJK JP;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 100vw;
+  background-color: #EF5050;
+  margin: 0;
+  color: white;
+  text-align: center;
+  margin-top: -8px;
+}
+
+.display-animation-container {
+  width: 100%;
+  height: 48vh;
+  text-align: center;
+}
+
+.reactions-container {
+  width: 100%;
+}
+
+.reactions-container-bg {
+  background: #EF5050 0% 0% no-repeat padding-box;
+  height: 45vh;
+  width: 100vw;
+}
+
+.reactions-ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reaction-element {
+  width: 32%;
+  margin: 30px 12px;
+  padding: 0px 5px;
+  padding-left: 26px;
+  color: #EF5050;
+  border-radius: 36px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #C44040;
+  position: relative;
+}
+
+.comment-container {
+  height: 0vh;
+  width: 100%;
+}
+
+.comment-form {
+  font-size: 20px;
+  width: 100%;
+}
+
+.reaction-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.charactor-container {
+  margin-top: 20px;
+}
